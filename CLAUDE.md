@@ -1,6 +1,6 @@
 # Management Workspace
 
-This is an AI-augmented engineering management workspace. The `.lead/` directory
+This is an AI-augmented management workspace. The `.lead/` directory
 contains persistent management context that evolves across sessions.
 
 ## Directory Map
@@ -15,6 +15,7 @@ contains persistent management context that evolves across sessions.
 - `.lead/journal/` — Daily sync entries capturing state of mind, events, observations
 - `.lead/drafts/` — Communications in progress (updates, proposals, feedback, emails)
 - `.lead/reviews/` — Performance review and feedback drafts
+- `.lead/references/` — Reference documents (leveling guides, design docs, policies, etc.)
 
 ## Behavior Guidelines
 
@@ -53,3 +54,9 @@ When working in this workspace:
    person file updates so the user can track evolution over time.
 8. **Never fabricate context.** If a person file or context file doesn't exist yet,
    say so and offer to create it. Don't invent history.
+9. **Consult references when relevant.** Check `.lead/references/` when:
+   - Evaluating performance or discussing levels (look for leveling guides, career ladders)
+   - Making decisions that might involve policy or process (look for relevant docs)
+   - Discussing specific projects (look for design docs, project plans)
+   - Preparing for meetings about specific initiatives (look for related docs)
+   If references exist that could inform the task, use them. If none exist, proceed without.

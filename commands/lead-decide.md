@@ -11,6 +11,8 @@ Argument: decision topic. Example: `/lead-decide reorg team structure` or `/lead
    - `.lead/context/principles.md`
    - Any related decision files in `.lead/decisions/` (scan filenames for related topics)
    - Last 5 journal entries for relevant context
+   - Scan `.lead/references/` for docs relevant to the decision topic (policies,
+     design docs, project plans, or other material that could inform the decision)
 
 2. Ask me to describe the decision: "Tell me about this decision. What's the context,
    what are you considering, and what's making it hard?" Wait for my response.

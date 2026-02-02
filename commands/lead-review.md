@@ -11,6 +11,8 @@ Examples: `/lead-review alice` or `/lead-review bob h1-2026`
    - `.lead/context/principles.md` (for calibration against your values)
    - All journal entries, scanning for mentions of this person
    - Any previous review drafts in `.lead/reviews/`
+   - Scan `.lead/references/` for leveling guides, career ladders, or performance
+     criteria docs — use these to calibrate expectations for their level
 
 2. If the person file has fewer than 3 entries in the 1:1 Log, warn me:
    "The record for {name} is thin. Consider what evidence you have beyond

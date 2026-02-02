@@ -18,6 +18,8 @@ Argument: person name, meeting name, or description. Example: `/lead-prep alice`
    - `.lead/context/org.md`
    - `.lead/context/principles.md` (for report preps especially)
    - Last 5 journal entries, scanning for mentions of this person
+   - Scan `.lead/references/` for docs relevant to discussion topics (project plans,
+     design docs, or other material that may come up in the meeting)
 
 Save all prep docs to `.lead/drafts/prep-{name}-{YYYY-MM-DD}.md`.
 
@@ -155,6 +157,7 @@ Focus: their perspective, what they need from you, and influence strategy.
    - `.lead/context/org.md`
    - Last 3 journal entries for relevant mentions
    - Any relevant decision files in `.lead/decisions/`
+   - Scan `.lead/references/` for docs relevant to the meeting topic
 
 2. Ask me: "What's the meeting about and who's in the room?" if not clear from arguments.
 

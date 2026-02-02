@@ -1,6 +1,6 @@
-# Lead: An AI-Augmented Engineering Management Skill
+# Lead: An AI-Augmented Management Skill
 
-A Claude Code skill for senior engineering managers. Persistent, file-backed context
+A Claude Code skill for managers and leaders. Persistent, file-backed context
 that evolves across sessions — not a chatbot, but a living management operating system.
 
 ## Philosophy
@@ -81,8 +81,9 @@ After `/lead-init`, your workspace contains:
 │   └── {YYYY-MM-DD}.md  # Daily sync entries
 ├── drafts/
 │   └── {slug}.md         # Communications in progress
-└── reviews/
-    └── {name}-{cycle}.md # Performance review drafts
+├── reviews/
+│   └── {name}-{cycle}.md # Performance review drafts
+└── references/           # Reference docs you consult (leveling guides, etc.)
 ```
 
 Every command reads from and writes to these files. Context accumulates over time.

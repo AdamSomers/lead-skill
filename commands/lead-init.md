@@ -10,6 +10,7 @@ Initialize the Lead management workspace. This is a one-time setup.
 .lead/journal/
 .lead/drafts/
 .lead/reviews/
+.lead/references/
 ```
 
 2. Create starter context files from the templates below. For each file, ask me
@@ -78,6 +79,14 @@ Initialize the Lead management workspace. This is a one-time setup.
    Note: `team.md` remains the **org roll-up** for the team as a unit.
    Person files are for individual relationship tracking regardless of type.
    Both exist and serve different purposes.
+
+8. Ask about references: "Do you have any reference documents you'd like to add?
+   These could be leveling guides, design docs, project plans, policies, or anything
+   else you regularly consult. You can add files to `.lead/references/` now or at
+   any time later."
+
+   If they have references to add, help them copy or create the files. Don't assume
+   what types of references they need — let them tell you.
 
 After setup, confirm what was created and suggest running `/lead-sync` to capture
 current state of mind.
