@@ -1,10 +1,11 @@
 # {Full Name}
 
-**Type:** report | chain | peer | stakeholder
+**Type:** report | rollup | chain | peer | stakeholder
 **Role:** {title}
 **Level:** {level, if known}
 **Team:** {their team, especially relevant for non-reports}
-**Relationship:** {how you relate — "direct report", "my manager", "PM partner", "peer EM", etc.}
+**Reports to:** {for rollups — which of your directs they roll up through}
+**Relationship:** {how you relate — "direct report", "skip-level report", "my manager", etc.}
 **Started tracking:** {date}
 
 ## Context
@@ -16,8 +17,8 @@
 ## Strengths
 - {what they're good at}
 
-## Growth Areas (reports only)
-- {development areas — omit this section for non-reports}
+## Growth Areas (reports and rollups only)
+- {development areas — omit this section for chain, peer, stakeholder}
 
 ## Current Priorities
 {what they're focused on right now — useful for all types}

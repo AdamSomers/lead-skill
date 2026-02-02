@@ -8,6 +8,7 @@ contains persistent management context that evolves across sessions.
 - `.lead/context/` — Foundational context: team roster, priorities, org structure, principles, and self (your own career tracking)
 - `.lead/people/` — One file per person (not just reports). Each has a **Type** field:
   - `report` — direct reports (growth areas, feedback, performance tracking)
+  - `rollup` — indirect reports in your org (visibility, calibration, career trajectory)
   - `chain` — management chain (manager, skip-level — upward management context)
   - `peer` — peer EMs/managers (alignment, shared dependencies)
   - `stakeholder` — PMs, cross-functional partners, key ICs (influence, collaboration)
@@ -32,6 +33,8 @@ When working in this workspace:
    Professional, fair, evidence-based.
 5. **Respect person types.** The Type field in person files controls behavior:
    - `report`: track growth areas, queue feedback, monitor performance
+   - `rollup`: track growth areas (lighter touch), calibration context, career trajectory
+     (feedback goes through their manager, not directly)
    - `chain`: focus on upward management — their priorities, your positioning
    - `peer`: focus on alignment and mutual dependencies
    - `stakeholder`: focus on influence, their perspective, and shared deliverables

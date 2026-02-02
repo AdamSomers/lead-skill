@@ -19,11 +19,12 @@ Initialize the Lead management workspace. This is a one-time setup.
 
    To get started, I need to capture context about:
    - **Your team** — direct reports, their roles, strengths, growth areas
+   - **Your rollups** — indirect reports you want to track (skip-levels, etc.)
    - **Your priorities** — current objectives, key results, biggest bets
    - **Your org** — manager, peers, key stakeholders, dependencies
    - **Your principles** — management philosophy, decision heuristics
    - **Yourself** — career goals, accomplishments, growth focus
-   - **Key people** — anyone you interact with regularly (not just reports)
+   - **Key people** — anyone you interact with regularly
 
    This can take a while if you have many reports and stakeholders.
 
@@ -102,6 +103,21 @@ For each report, copy this block:
 - **Notes:** {anything else relevant}
 
 {Add more reports as needed}
+
+### Rollups (Indirect Reports)
+{People in your org who don't report directly to you but you want to track —
+skip-levels, high-potential ICs, key contributors several layers deep, etc.}
+
+#### {Full Name}
+- **Role:** {title}
+- **Level:** {if applicable}
+- **Reports to:** {which of your directs they roll up through}
+- **Why tracking:** {visibility, high-potential, retention risk, etc.}
+- **Strengths:** {what they're good at}
+- **Growth areas:** {where they need development}
+- **Notes:** {anything else relevant}
+
+{Add more rollups as needed, or skip if you don't manage managers}
 
 ### Team Dynamics
 {How is the team working together? Any tensions, strengths, concerns?}
@@ -231,6 +247,7 @@ If `/lead-init` is run and `.lead/intake.md` exists with content:
 
 3. Create person files in `.lead/people/` for:
    - Each direct report (Type: report)
+   - Each rollup/indirect report (Type: rollup)
    - Manager and skip-level (Type: chain)
    - Each peer manager (Type: peer)
    - Each stakeholder (Type: stakeholder)
@@ -266,17 +283,18 @@ If they choose the conversational approach, proceed step by step:
    accomplishments to capture.
 
 6. Create person files in `.lead/people/`. For each direct report from team.md,
-   create a file. Then ask: "Who else should we track? Your manager, skip-level,
-   PM partners, peer EMs, or other key stakeholders?"
+   create a file. Then ask: "Who else should we track? Indirect reports (rollups),
+   your manager, skip-level, PM partners, peer EMs, or other key stakeholders?"
 
    Person file template:
    ```markdown
    # {Full Name}
 
-   **Type:** {report | chain | peer | stakeholder}
+   **Type:** {report | rollup | chain | peer | stakeholder}
    **Role:** {title}
    **Team:** {their team}
-   **Relationship:** {e.g., "direct report", "my manager", "PM partner", "peer EM"}
+   **Reports to:** {for rollups — which direct they roll up through}
+   **Relationship:** {e.g., "direct report", "skip-level report", "my manager", "peer EM"}
    **Started tracking:** {YYYY-MM-DD}
 
    ## Context
@@ -289,7 +307,7 @@ If they choose the conversational approach, proceed step by step:
    - {from setup context}
 
    ## Growth Areas
-   {include only for Type: report}
+   {include only for Type: report or rollup}
 
    ## Current Priorities
    {what they're focused on now}

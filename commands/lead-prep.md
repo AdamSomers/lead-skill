@@ -7,6 +7,7 @@ Argument: person name, meeting name, or description. Example: `/lead-prep alice`
 1. Determine the prep type:
    - If the argument matches a file in `.lead/people/`, read the file and check the **Type** field:
      - `report` → **Report 1:1 Prep**
+     - `rollup` → **Rollup 1:1 Prep**
      - `chain` → **Upward Prep**
      - `peer` → **Peer Prep**
      - `stakeholder` → **Stakeholder Prep**
@@ -56,6 +57,48 @@ Save all prep docs to `.lead/drafts/prep-{name}-{YYYY-MM-DD}.md`.
 
 ## Outcomes to Push For
 - {what should be different after this conversation}
+```
+
+---
+
+## Rollup 1:1 Prep (Type: rollup)
+
+Prep for skip-level or indirect report 1:1. Focus: visibility, career development,
+gathering signal, and maintaining connection across layers.
+
+```markdown
+# Skip-Level Prep: {Name} — {YYYY-MM-DD}
+
+## Context
+- **Reports to:** {their manager, your direct report}
+- **Role:** {their title and level}
+- **How long in role:** {tenure context}
+
+## What I Know About Them
+{summary from person file — strengths, growth areas, recent work}
+
+## Their Manager's Perspective
+{what their direct manager has shared about them, if anything in notes}
+
+## Topics to Explore
+1. {topic} — {why this matters, what signal to gather}
+2. {topic} — {why this matters, what signal to gather}
+
+## Questions to Ask
+- {about their experience on the team}
+- {about their growth and career aspirations}
+- {about what's working / not working from their vantage point}
+- {about their relationship with their manager, if appropriate}
+
+## Signal to Gather
+{what are you trying to learn? team health, manager effectiveness, retention risk, etc.}
+
+## Things to Share
+- {org context that helps them see the bigger picture}
+- {recognition for work you've noticed}
+
+## Calibration Notes
+{how does this person compare to peers? promotion potential? retention risk?}
 ```
 
 ---
