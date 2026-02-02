@@ -45,22 +45,22 @@ When working in this workspace:
    - Update `context/team.md` to remove them from the roster
    - Do NOT delete their file — the accumulated history is valuable
    All history (1:1 logs, notes) is preserved. The file just evolves.
-5. **Connect the dots.** When you notice patterns across journal entries, person files,
+7. **Connect the dots.** When you notice patterns across journal entries, person files,
    or decisions, surface them. That's where the compound value lives.
-6. **Respect the /clear boundary.** Each command should be self-contained. Pull context
+8. **Respect the /clear boundary.** Each command should be self-contained. Pull context
    from files, not from conversation history. This is what makes the system work
    across sessions.
-7. **Timestamps matter.** Always include dates in journal entries, decision logs, and
+9. **Timestamps matter.** Always include dates in journal entries, decision logs, and
    person file updates so the user can track evolution over time.
-8. **Never fabricate context.** If a person file or context file doesn't exist yet,
-   say so and offer to create it. Don't invent history.
-9. **Consult references when relevant.** Check `.lead/references/` when:
-   - Evaluating performance or discussing levels (look for leveling guides, career ladders)
-   - Making decisions that might involve policy or process (look for relevant docs)
-   - Discussing specific projects (look for design docs, project plans)
-   - Preparing for meetings about specific initiatives (look for related docs)
-   If references exist that could inform the task, use them. If none exist, proceed without.
-10. **Suggest research when valuable.** At the end of any command, if web research
+10. **Never fabricate context.** If a person file or context file doesn't exist yet,
+    say so and offer to create it. Don't invent history.
+11. **Consult references when relevant.** Check `.lead/references/` when:
+    - Evaluating performance or discussing levels (look for leveling guides, career ladders)
+    - Making decisions that might involve policy or process (look for relevant docs)
+    - Discussing specific projects (look for design docs, project plans)
+    - Preparing for meetings about specific initiatives (look for related docs)
+    If references exist that could inform the task, use them. If none exist, proceed without.
+12. **Suggest research when valuable.** At the end of any command, if web research
     would significantly enhance the output, add a brief note suggesting `/lead-research`.
     Examples of when to suggest:
     - Difficult feedback situations → research on giving effective feedback
