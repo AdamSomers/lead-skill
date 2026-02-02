@@ -27,11 +27,16 @@ Initialize the Lead management workspace. This is a one-time setup.
    partners (PM, design, QA, dependent teams), and any political dynamics I want
    to track.
 
-6. Finally `context/principles.md` — ask me about my management philosophy, how I
+6. Then `context/principles.md` — ask me about my management philosophy, how I
    make decisions, what I value in engineers, and any recurring decision heuristics
    I use (e.g., "bias toward reversible decisions" or "always staff the critical path").
 
-7. Create person files in `.lead/people/`. Every person I interact with regularly
+7. Then `context/self.md` — ask me about my own career: current role and level,
+   career goals, what I'm working on developing, my strengths, and any recent
+   accomplishments I want to capture. This file tracks my own growth and feeds
+   into `/lead-self-review`.
+
+8. Create person files in `.lead/people/`. Every person I interact with regularly
    gets a file — not just reports. There are four types:
 
    - **report** — my direct reports
@@ -80,7 +85,7 @@ Initialize the Lead management workspace. This is a one-time setup.
    Person files are for individual relationship tracking regardless of type.
    Both exist and serve different purposes.
 
-8. Ask about references: "Do you have any reference documents you'd like to add?
+9. Ask about references: "Do you have any reference documents you'd like to add?
    These could be leveling guides, design docs, project plans, policies, or anything
    else you regularly consult. You can add files to `.lead/references/` now or at
    any time later."

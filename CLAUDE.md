@@ -5,7 +5,7 @@ contains persistent management context that evolves across sessions.
 
 ## Directory Map
 
-- `.lead/context/` — Foundational context: team roster, priorities, org structure, principles
+- `.lead/context/` — Foundational context: team roster, priorities, org structure, principles, and self (your own career tracking)
 - `.lead/people/` — One file per person (not just reports). Each has a **Type** field:
   - `report` — direct reports (growth areas, feedback, performance tracking)
   - `chain` — management chain (manager, skip-level — upward management context)

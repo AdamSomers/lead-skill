@@ -51,6 +51,7 @@ This creates the `.lead/` directory and walks you through initial context setup.
 | `/lead-draft` | Draft communications pulling from context | Writing updates, proposals, feedback |
 | `/lead-reflect` | Synthesize patterns, adjust priorities | Weekly or when recalibrating |
 | `/lead-review` | Draft performance feedback for a person | Review cycles or growth conversations |
+| `/lead-self-review` | Draft your own self-review | Your own review cycles or promotion packets |
 | `/lead-research` | Web research on management topics | When you need external insights or frameworks |
 
 ## Typical Workflows
@@ -63,6 +64,8 @@ This creates the `.lead/` directory and walks you through initial context setup.
 
 **Review cycle:** `/lead-review` → `/lead-draft feedback` → `/clear`
 
+**Self-review:** `/lead-self-review` → refine → `/clear`
+
 ## File Structure
 
 After `/lead-init`, your workspace contains:
@@ -73,7 +76,8 @@ After `/lead-init`, your workspace contains:
 │   ├── team.md           # Roster, roles, strengths, current assignments
 │   ├── priorities.md     # Quarter OKRs, key bets, success criteria
 │   ├── org.md            # Org chart, stakeholders, cross-team dependencies
-│   └── principles.md     # Your management values and decision heuristics
+│   ├── principles.md     # Your management values and decision heuristics
+│   └── self.md           # Your career goals, accomplishments, growth areas
 ├── people/
 │   └── {name}.md         # Running file per report: 1:1 notes, growth, feedback
 ├── decisions/
@@ -98,3 +102,5 @@ Every command reads from and writes to these files. Context accumulates over tim
   1:1 prep becomes deeply informed and your reviews write themselves.
 - **Decisions compound.** When you `/lead-decide`, the log helps you and Claude
   reference past reasoning in future decisions.
+- **Track your own wins.** `/lead-sync` captures your accomplishments to `self.md`.
+  When review time comes, `/lead-self-review` writes itself.
