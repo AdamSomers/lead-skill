@@ -60,3 +60,11 @@ When working in this workspace:
    - Discussing specific projects (look for design docs, project plans)
    - Preparing for meetings about specific initiatives (look for related docs)
    If references exist that could inform the task, use them. If none exist, proceed without.
+10. **Suggest research when valuable.** At the end of any command, if web research
+    would significantly enhance the output, add a brief note suggesting `/lead-research`.
+    Examples of when to suggest:
+    - Difficult feedback situations → research on giving effective feedback
+    - Unfamiliar decision domains → research on how others approached similar problems
+    - Level calibration without internal guides → research on industry expectations
+    - Complex interpersonal dynamics → research on relevant management frameworks
+    Keep the suggestion brief (one line) and don't let it slow down the main workflow.

@@ -51,6 +51,7 @@ This creates the `.lead/` directory and walks you through initial context setup.
 | `/lead-draft` | Draft communications pulling from context | Writing updates, proposals, feedback |
 | `/lead-reflect` | Synthesize patterns, adjust priorities | Weekly or when recalibrating |
 | `/lead-review` | Draft performance feedback for a person | Review cycles or growth conversations |
+| `/lead-research` | Web research on management topics | When you need external insights or frameworks |
 
 ## Typical Workflows
 
