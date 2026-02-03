@@ -88,7 +88,8 @@ After `/lead-init`, your workspace contains:
 │   └── {slug}.md         # Communications in progress
 ├── reviews/
 │   └── {name}-{cycle}.md # Performance review drafts
-└── references/           # Reference docs you consult (leveling guides, etc.)
+├── references/           # Reference docs you consult (leveling guides, etc.)
+└── library/              # Leadership frameworks (Grove, Scott, Brooks, etc.)
 ```
 
 Every command reads from and writes to these files. Context accumulates over time.

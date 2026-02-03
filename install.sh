@@ -39,6 +39,12 @@ mkdir -p "$WORKSPACE/.lead-templates"
 cp "$SCRIPT_DIR/templates/"*.md "$WORKSPACE/.lead-templates/"
 echo "  ✓ Templates available in .lead-templates/"
 
+# Copy library templates
+echo "→ Installing library templates..."
+mkdir -p "$WORKSPACE/.lead-templates/library"
+cp "$SCRIPT_DIR/templates/library/"*.md "$WORKSPACE/.lead-templates/library/"
+echo "  ✓ Library templates available in .lead-templates/library/"
+
 echo ""
 echo "╔══════════════════════════════════════════════╗"
 echo "║  Installation complete!                      ║"

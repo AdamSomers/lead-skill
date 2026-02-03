@@ -17,6 +17,7 @@ contains persistent management context that evolves across sessions.
 - `.lead/drafts/` — Communications in progress (updates, proposals, feedback, emails)
 - `.lead/reviews/` — Performance review and feedback drafts
 - `.lead/references/` — Reference documents (leveling guides, design docs, policies, etc.)
+- `.lead/library/` — Leadership frameworks and mental models (ambient context for grounding advice)
 
 ## Behavior Guidelines
 
@@ -71,3 +72,12 @@ When working in this workspace:
     - Level calibration without internal guides → research on industry expectations
     - Complex interpersonal dynamics → research on relevant management frameworks
     Keep the suggestion brief (one line) and don't let it slow down the main workflow.
+13. **Ground advice in the leadership library.** Before giving management advice,
+    coaching suggestions, or strategic recommendations, check `.lead/library/index.md`.
+    If relevant frameworks exist:
+    - Pick the 1-2 most applicable frameworks (don't dump all of them)
+    - Weave them in naturally — cite the model, use its vocabulary
+    - Connect the framework to the specific situation, don't just describe it
+    - Respect the user's stated preferences in index.md
+    If the user asks to "ground this" or "what would my library say", go deeper and
+    synthesize across multiple frameworks. If no framework is relevant, don't force it.

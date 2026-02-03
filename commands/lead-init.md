@@ -11,37 +11,33 @@ Initialize the Lead management workspace. This is a one-time setup.
 .lead/drafts/
 .lead/reviews/
 .lead/references/
+.lead/library/
 ```
 
-2. Introduce the setup and offer a choice:
+2. Introduce the setup:
 
    "Welcome to Lead. I'll help you set up your management workspace.
 
    To get started, I need to capture context about:
+   - **About you** — your role, career goals, strengths, growth areas
    - **Your team** — direct reports, their roles, strengths, growth areas
    - **Your rollups** — indirect reports you want to track (skip-levels, etc.)
-   - **Your priorities** — current objectives, key results, biggest bets
-   - **Your org** — manager, peers, key stakeholders, dependencies
-   - **Your principles** — management philosophy, decision heuristics
-   - **Yourself** — career goals, accomplishments, growth focus
-   - **Key people** — anyone you interact with regularly
+   - **Your priorities** — current objectives, key results, biggest bets, risks
+   - **Your organization** — manager, skip-level, peer managers, key stakeholders, org dynamics
+   - **Your principles** — management philosophy, decision heuristics, feedback approach
+   - **References** — leveling guides, design docs, policies you consult
+   - **Leadership library** — favorite management books and frameworks
 
-   This can take a while if you have many reports and stakeholders.
+   This can take a while if you have many reports and stakeholders."
 
-   **Two ways to do this:**
+3. Use AskUserQuestion to offer a choice between setup approaches:
 
-   **Option A: Fill in a template** (recommended for busy managers)
-   I'll create an intake template you can fill in at your own pace — in your
-   editor, between meetings, whatever works. When you're done, I'll process
-   it into the proper files.
+   Question: "How would you like to set up your workspace?"
+   Options:
+   - **Fill in a template (Recommended)** — I'll create an intake document you can fill in at your own pace, in your editor, between meetings. When done, run `/lead-init` again to process it.
+   - **Conversational setup** — We walk through each section together. More guided, but takes longer in one sitting.
 
-   **Option B: Conversational setup**
-   We walk through each section together. I ask questions, you answer, I
-   create files as we go. More guided, but takes longer in one sitting.
-
-   Which approach works better for you?"
-
-3. Wait for their choice.
+4. Wait for their choice and proceed to the appropriate section below.
 
 ---
 
@@ -217,6 +213,26 @@ note what you want to include and we'll sort it out.}
 
 ---
 
+## Leadership Library
+
+I'll create a library of frameworks to reference when giving advice. Defaults:
+- High Output Management (Grove) — leverage, task-relevant maturity
+- Radical Candor (Scott) — feedback, care/challenge quadrant
+- Situational Leadership (Blanchard) — adapting style to development level
+- COIN Feedback — structured feedback delivery
+- Mythical Man-Month (Brooks) — team scaling, planning pitfalls
+- Pragmatic Programmer (Hunt/Thomas) — technical craft, trade-offs
+
+### Include default library?
+{yes / no}
+
+### Other favorite management books or frameworks?
+{List any other books, frameworks, or mental models you'd like me to add.
+I'll create reference files for them. Examples: "The Manager's Path",
+"Turn the Ship Around", "Thinking in Systems", etc.}
+
+---
+
 Done? Run `/lead-init` and I'll process this into your workspace.
 ```
 
@@ -256,10 +272,15 @@ If `/lead-init` is run and `.lead/intake.md` exists with content:
 
 4. Handle references if any were mentioned.
 
-5. Rename `intake.md` to `intake-processed-{date}.md` so it's preserved
+5. Set up the leadership library:
+   - If "Include default library?" is yes, copy library templates to `.lead/library/`
+   - If other books/frameworks were listed, create additional framework files for them
+   - If no to defaults and no other books, create `.lead/library/index.md` with empty list
+
+6. Rename `intake.md` to `intake-processed-{date}.md` so it's preserved
    but won't be reprocessed.
 
-6. Summarize what was created and suggest running `/lead-sync`.
+7. Summarize what was created and suggest running `/lead-sync`.
 
 ---
 
@@ -323,6 +344,25 @@ If they choose the conversational approach, proceed step by step:
    These could be leveling guides, design docs, project plans, policies, or
    anything else you regularly consult. You can add files to `.lead/references/`
    now or at any time later."
+
+8. Set up the leadership library: "I'll create a library of leadership frameworks
+   that I'll reference when giving advice. The defaults include:
+   - High Output Management (Grove) — leverage, delegation, task-relevant maturity
+   - Radical Candor (Scott) — feedback, care/challenge quadrant
+   - Situational Leadership (Blanchard) — adapting style to development level
+   - COIN Feedback — structured feedback delivery
+   - Mythical Man-Month (Brooks) — team scaling, planning pitfalls
+   - Pragmatic Programmer (Hunt/Thomas) — technical craft, trade-offs
+
+   Want me to set up the defaults?"
+
+   If yes, copy the library templates to `.lead/library/`.
+   If no, create just `.lead/library/index.md` with an empty frameworks list.
+
+   Then ask: "Any other favorite management books or frameworks you'd like me
+   to add? I can create reference files for them." If they list any, create
+   framework files using the standard format (Key Models, Decision Heuristics,
+   Anti-Patterns).
 
 After setup, confirm what was created and suggest running `/lead-sync` to capture
 current state of mind.
