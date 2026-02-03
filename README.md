@@ -11,31 +11,64 @@ persists and compounds. The more you use it, the more useful it becomes.
 
 ## Installation
 
-### 1. Copy commands to your Claude Code commands directory
+### Quick Install
 
 ```bash
-# For user-level commands (available in all projects):
-cp commands/*.md ~/.claude/commands/
-
-# Or for project-level (create a dedicated management workspace):
-mkdir -p ~/management/.claude/commands
-cp commands/*.md ~/management/.claude/commands/
+git clone git@github.com:AdamSomers/lead-skill.git
+cd lead-skill
+./install.sh
 ```
 
-### 2. Copy CLAUDE.md to your workspace root
-
-```bash
-cp CLAUDE.md ~/management/CLAUDE.md
-```
-
-### 3. Initialize
+This creates a `~/management` workspace with everything set up. Then:
 
 ```bash
 cd ~/management
 claude
-# Then run:
 /lead-init
 ```
+
+To install to a different location, pass the path as an argument:
+
+```bash
+./install.sh ~/my-workspace
+```
+
+### Manual Installation
+
+If you prefer to set things up yourself:
+
+1. **Copy commands** to your Claude Code commands directory:
+
+   ```bash
+   # For user-level commands (available in all projects):
+   cp commands/*.md ~/.claude/commands/
+
+   # Or for project-level (create a dedicated management workspace):
+   mkdir -p ~/management/.claude/commands
+   cp commands/*.md ~/management/.claude/commands/
+   ```
+
+2. **Copy CLAUDE.md** to your workspace root:
+
+   ```bash
+   cp CLAUDE.md ~/management/CLAUDE.md
+   ```
+
+3. **Copy templates** for reference:
+
+   ```bash
+   mkdir -p ~/management/.lead-templates/library
+   cp templates/*.md ~/management/.lead-templates/
+   cp templates/library/*.md ~/management/.lead-templates/library/
+   ```
+
+4. **Initialize**:
+
+   ```bash
+   cd ~/management
+   claude
+   /lead-init
+   ```
 
 This creates the `.lead/` directory and walks you through initial context setup.
 
