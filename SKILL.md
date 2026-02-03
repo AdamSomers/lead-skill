@@ -5,7 +5,7 @@ that evolves across sessions — not a chatbot, but a living management operatin
 
 ## Philosophy
 
-Like GSD for coding, Lead stores all context in files. Each command reads what it
+Lead stores all context in files. Each command reads what it
 needs, does its work, and writes back. Between `/clear` calls, your management state
 persists and compounds. The more you use it, the more useful it becomes.
 
