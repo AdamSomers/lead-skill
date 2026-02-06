@@ -87,19 +87,12 @@ Argument: decision topic. Example: `/lead-decide reorg team structure` or `/lead
 6. Ask me: "What's your call?" Record my decision in the Decision section.
    Update any other files affected (priorities.md, people files, journal).
 
-7. **Append MY follow-up actions to `.lead/actions.md`:**
-   - Only include actions assigned to ME, not actions delegated to others
-   - All my decision follow-ups default to **P1** (decisions need timely execution)
-   - Include source: `*source: decisions/{date}-{slug}*`
-   - Include added date and any mentioned deadlines
-
 ---
 
 ## Next Commands
 
 After deciding, suggest:
 - `/lead-draft {type}` — communicate the decision (announcement, email, update)
-- `/lead-actions` — see all follow-up actions
 - `/clear` — before the next command
 
 $ARGUMENTS

@@ -12,7 +12,7 @@ Initialize the Lead management workspace. This is a one-time setup.
 
 ## Fresh Setup
 
-1. Create the directory structure and actions file:
+1. Create the directory structure:
 ```
 .lead/context/
 .lead/people/
@@ -22,7 +22,6 @@ Initialize the Lead management workspace. This is a one-time setup.
 .lead/reviews/
 .lead/references/
 .lead/library/
-.lead/actions.md
 ```
 
 2. Introduce the setup:
@@ -388,7 +387,6 @@ is established. Don't re-run setup. Instead:
 1. **Scan for missing components:**
    - `.lead/library/` directory
    - `.lead/library/index.md`
-   - `.lead/actions.md`
    - `.lead/references/` directory
    - `.lead/context/self.md`
 
@@ -404,14 +402,6 @@ is established. Don't re-run setup. Instead:
 
    If yes, create `.lead/library/` and copy the default library templates.
    Ask about additional favorite books/frameworks.
-
-   **If `.lead/actions.md` is missing:**
-   "Action tracking is new. Want me to set it up?
-   - Creates a prioritized action list (P1/P2/P3)
-   - Migrates existing action items from your files"
-
-   If yes, create `.lead/actions.md` and run the migration (scan existing
-   files for `- [ ]` items, infer priorities from source).
 
    **If `.lead/context/self.md` is missing:**
    "Self-tracking is new — it captures your accomplishments for self-reviews.
