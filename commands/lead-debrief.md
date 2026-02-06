@@ -56,8 +56,12 @@ Create `.lead/journal/{YYYY-MM-DD}-{slug}.md` or append to today's journal:
 - {any changes to .lead/context/priorities.md — if significant, update that file}
 ```
 
-5. **Append actions to `.lead/actions.md`:**
-   - For person debriefs, infer priority from Type:
+5. **Append MY actions to `.lead/actions.md`:**
+   - Only include actions assigned to ME (the user), not actions for the other person
+   - Example: "Alice: update design doc" → do NOT add (that's Alice's action)
+   - Example: "Me: follow up with Alice on design doc" → add this
+   - Example: "Schedule skip-level for Alice" → add this (implicit: I do this)
+   - For my actions, infer priority from person Type:
      - `chain` → P1
      - `report` → P2
      - `rollup`, `stakeholder`, `peer` → P2

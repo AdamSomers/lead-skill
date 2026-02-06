@@ -83,8 +83,12 @@ When working in this workspace:
     If the user asks to "ground this" or "what would my library say", go deeper and
     synthesize across multiple frameworks. If no framework is relevant, don't force it.
 14. **Keep actions centralized.** When any command creates action items (debriefs,
-    decisions, syncs), always append them to `.lead/actions.md` in addition to the
-    source file. Include source reference, added date, and due date (if mentioned).
+    decisions, syncs), append the USER'S actions to `.lead/actions.md`. Only track
+    actions assigned to the user, not actions for other people:
+    - "Alice: update design doc" → don't add (Alice's action)
+    - "Me: follow up with Alice" → add
+    - "Review the proposal" → add (implicitly user's action)
+    Include source reference, added date, and due date (if mentioned).
     Infer priority from context:
     - Decision follow-ups → P1
     - Chain-related actions → P1

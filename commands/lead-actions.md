@@ -1,6 +1,7 @@
-Manage the prioritized action list.
+Manage YOUR prioritized action list.
 
-Shows all active actions, allows adding new ones, marking complete, or reprioritizing.
+Tracks actions assigned to you (not actions for others). Shows all active actions,
+allows adding new ones, marking complete, or reprioritizing.
 
 ## Usage
 
@@ -82,7 +83,13 @@ If `.lead/actions.md` doesn't exist:
    - `.lead/journal/*.md`
    - `.lead/decisions/*.md`
 
-2. Create `.lead/actions.md` with discovered actions:
+2. **Only include actions assigned to the user**, not actions for other people:
+   - "Alice: update design doc" → skip (Alice's action)
+   - "Me: follow up with Alice" → include
+   - "Schedule meeting with PM" → include (implicitly user's action)
+   - "Review Alice's PR" → include (implicitly user's action)
+
+3. Create `.lead/actions.md` with discovered actions:
    - Infer priority based on source:
      - Decision follow-ups → P1
      - Chain person files → P1
@@ -91,7 +98,7 @@ If `.lead/actions.md` doesn't exist:
      - Journal entries → P3
    - Include source file reference for each
 
-3. Report: "Migrated {n} actions from existing files."
+4. Report: "Migrated {n} actions from existing files."
 
 ## Priority Inference
 
