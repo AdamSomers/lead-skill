@@ -12,6 +12,7 @@ contains persistent management context that evolves across sessions.
   - `chain` — management chain (manager, skip-level — upward management context)
   - `peer` — peer EMs/managers (alignment, shared dependencies)
   - `stakeholder` — PMs, cross-functional partners, key ICs (influence, collaboration)
+- `.lead/actions.md` — Prioritized action list (P1/P2/P3) with source tracking
 - `.lead/decisions/` — Decision logs with context, options, rationale, and outcomes
 - `.lead/journal/` — Daily sync entries capturing state of mind, events, observations
 - `.lead/drafts/` — Communications in progress (updates, proposals, feedback, emails)
@@ -81,3 +82,13 @@ When working in this workspace:
     - Respect the user's stated preferences in index.md
     If the user asks to "ground this" or "what would my library say", go deeper and
     synthesize across multiple frameworks. If no framework is relevant, don't force it.
+14. **Keep actions centralized.** When any command creates action items (debriefs,
+    decisions, syncs), always append them to `.lead/actions.md` in addition to the
+    source file. Include source reference, added date, and due date (if mentioned).
+    Infer priority from context:
+    - Decision follow-ups → P1
+    - Chain-related actions → P1
+    - Report/rollup actions → P2
+    - Stakeholder/peer actions → P2
+    - General journal items → P3
+    Manual priority tags in the action text take precedence over inference.

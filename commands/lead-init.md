@@ -2,7 +2,7 @@ Initialize the Lead management workspace. This is a one-time setup.
 
 ## Steps
 
-1. Create the directory structure:
+1. Create the directory structure and actions file:
 ```
 .lead/context/
 .lead/people/
@@ -12,6 +12,7 @@ Initialize the Lead management workspace. This is a one-time setup.
 .lead/reviews/
 .lead/references/
 .lead/library/
+.lead/actions.md
 ```
 
 2. Introduce the setup:

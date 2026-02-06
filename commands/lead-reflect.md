@@ -8,6 +8,7 @@ Run weekly (e.g., Friday afternoon) or whenever you need to step back and see th
    - `.lead/context/priorities.md`
    - `.lead/context/principles.md`
    - `.lead/context/team.md`
+   - `.lead/actions.md`
    - All journal entries from the past 7 days (or since last reflect)
    - All person files in `.lead/people/` (scan for recent entries)
    - Recent decision files in `.lead/decisions/`
@@ -60,6 +61,19 @@ vs. where should I be spending it?}
 
 ## Open Questions
 {things I should be thinking about but don't have answers for yet}
+
+## Action Review
+{full review of .lead/actions.md}
+| # | Action | Priority | Age | Status |
+|---|--------|----------|-----|--------|
+| 1 | {action} | P1 | 3d | on track |
+| 2 | {action} | P2 | 8d | **stale** |
+
+**Stale Actions (>7 days):**
+- {action} — *added: {date}* — Still relevant? Reprioritize or remove?
+
+**Completed This Week:**
+- {count} actions completed
 ```
 
 3. After generating, compare to the previous reflection (if one exists).
@@ -70,5 +84,11 @@ vs. where should I be spending it?}
 
 4. Ask: "Does this reflection land? Anything you'd adjust in priorities for
    next week?" If I update priorities, write changes to `priorities.md`.
+
+5. **Action Review.** Always review the action list during reflection:
+   - Surface all stale actions (>7 days old)
+   - For each stale action, ask: "Still relevant? Reprioritize, complete, or remove?"
+   - Update `.lead/actions.md` based on my responses
+   - Clean up completed actions older than 7 days from the Completed section
 
 $ARGUMENTS

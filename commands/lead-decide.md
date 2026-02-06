@@ -87,4 +87,9 @@ Argument: decision topic. Example: `/lead-decide reorg team structure` or `/lead
 6. Ask me: "What's your call?" Record my decision in the Decision section.
    Update any other files affected (priorities.md, people files, journal).
 
+7. **Append follow-up actions to `.lead/actions.md`:**
+   - All decision follow-ups default to **P1** (decisions need timely execution)
+   - Include source: `*source: decisions/{date}-{slug}*`
+   - Include added date and any mentioned deadlines
+
 $ARGUMENTS

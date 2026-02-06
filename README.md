@@ -78,6 +78,7 @@ This creates the `.lead/` directory and walks you through initial context setup.
 |---------|---------|-------------|
 | `/lead-init` | Create workspace, capture foundational context | Once at setup |
 | `/lead-sync` | Daily brain dump → processed into state files | Start of day or when overwhelmed |
+| `/lead-actions` | View, add, complete, or reprioritize actions | Check what's next or manage action list |
 | `/lead-prep` | Prepare for a 1:1 or meeting | Before any important meeting |
 | `/lead-debrief` | Capture outcomes, update state | After meetings |
 | `/lead-decide` | Structured decision analysis with multi-perspective council | Facing a non-trivial decision |
@@ -105,6 +106,7 @@ After `/lead-init`, your workspace contains:
 
 ```
 .lead/
+├── actions.md            # Prioritized action list (P1/P2/P3)
 ├── context/
 │   ├── team.md           # Roster, roles, strengths, current assignments
 │   ├── priorities.md     # Quarter OKRs, key bets, success criteria
@@ -136,5 +138,7 @@ Every command reads from and writes to these files. Context accumulates over tim
   1:1 prep becomes deeply informed and your reviews write themselves.
 - **Decisions compound.** When you `/lead-decide`, the log helps you and Claude
   reference past reasoning in future decisions.
+- **Actions stay visible.** Every debrief, decision, and sync feeds `actions.md`.
+  Run `/lead-actions` to see what's next, or let `/lead-sync` surface today's priorities.
 - **Track your own wins.** `/lead-sync` captures your accomplishments to `self.md`.
   When review time comes, `/lead-self-review` writes itself.

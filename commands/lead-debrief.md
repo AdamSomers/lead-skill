@@ -26,6 +26,7 @@ Read the person's **Type** field from their file. Update `.lead/people/{name}.md
 - {takeaway}
 **Action Items:**
 - [ ] {who}: {action}
+<!-- Also append to .lead/actions.md with source and priority based on person Type -->
 **My Observations:**
 - {anything I noted about their state, engagement, dynamics}
 ```
@@ -48,20 +49,30 @@ Create `.lead/journal/{YYYY-MM-DD}-{slug}.md` or append to today's journal:
 - {decision with context}
 **Action Items:**
 - [ ] {owner}: {action}
+<!-- Also append to .lead/actions.md with source: journal/{date}-{slug} -->
 **Key Dynamics:**
 - {notable interactions, alignments, tensions}
 **Impact on Priorities:**
 - {any changes to .lead/context/priorities.md — if significant, update that file}
 ```
 
-5. If any decisions were made that warrant a permanent record, ask:
+5. **Append actions to `.lead/actions.md`:**
+   - For person debriefs, infer priority from Type:
+     - `chain` → P1
+     - `report` → P2
+     - `rollup`, `stakeholder`, `peer` → P2
+   - For meeting debriefs → P2 (general)
+   - Include source file reference and added date
+   - If action has an explicit deadline mentioned, include `*due: {date}*`
+
+6. If any decisions were made that warrant a permanent record, ask:
    "Should I log the decision about {X} in the decisions directory?"
 
-6. If action items affect priorities.md, flag it and offer to update.
+7. If action items affect priorities.md, flag it and offer to update.
 
-7. Delete the prep file if one existed (it's been consumed into the debrief).
+8. Delete the prep file if one existed (it's been consumed into the debrief).
 
-8. Close with a brief synthesis: "Here's what changed in your state" listing
+9. Close with a brief synthesis: "Here's what changed in your state" listing
    which files were updated and any patterns worth noting.
 
 $ARGUMENTS
