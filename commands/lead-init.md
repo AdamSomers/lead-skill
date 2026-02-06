@@ -2,6 +2,16 @@ Initialize the Lead management workspace. This is a one-time setup.
 
 ## Steps
 
+1. **Check for existing workspace.** Look for `.lead/context/team.md` or other context files.
+
+   - If `.lead/` exists with context files → go to **Existing Workspace** section
+   - If `.lead/intake.md` exists → go to **Processing the Intake Template** section
+   - Otherwise → proceed with fresh setup below
+
+---
+
+## Fresh Setup
+
 1. Create the directory structure and actions file:
 ```
 .lead/context/
@@ -367,5 +377,57 @@ If they choose the conversational approach, proceed step by step:
 
 After setup, confirm what was created and suggest running `/lead-sync` to capture
 current state of mind.
+
+---
+
+## Existing Workspace
+
+If `.lead/` already has context files (team.md, priorities.md, etc.), the workspace
+is established. Don't re-run setup. Instead:
+
+1. **Scan for missing components:**
+   - `.lead/library/` directory
+   - `.lead/library/index.md`
+   - `.lead/actions.md`
+   - `.lead/references/` directory
+   - `.lead/context/self.md`
+
+2. **Report status:**
+   "Your Lead workspace is already set up. Checking for new features..."
+
+3. **For each missing component, offer to add it:**
+
+   **If `.lead/library/` is missing or empty:**
+   "The leadership library feature is new. Want me to set it up?
+   - Default frameworks include Grove, Scott, Blanchard, Brooks, and more
+   - I'll reference these when giving management advice"
+
+   If yes, create `.lead/library/` and copy the default library templates.
+   Ask about additional favorite books/frameworks.
+
+   **If `.lead/actions.md` is missing:**
+   "Action tracking is new. Want me to set it up?
+   - Creates a prioritized action list (P1/P2/P3)
+   - Migrates existing action items from your files"
+
+   If yes, create `.lead/actions.md` and run the migration (scan existing
+   files for `- [ ]` items, infer priorities from source).
+
+   **If `.lead/context/self.md` is missing:**
+   "Self-tracking is new — it captures your accomplishments for self-reviews.
+   Want me to create it?"
+
+   If yes, create from template and offer brief conversational setup.
+
+   **If `.lead/references/` is missing:**
+   "The references directory stores docs you consult (leveling guides, etc.).
+   Want me to create it?"
+
+   If yes, create the directory.
+
+4. **Summarize:**
+   "Your workspace is up to date. {N} new features added."
+
+   If nothing was missing: "Your workspace already has all features."
 
 $ARGUMENTS
