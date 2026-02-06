@@ -75,4 +75,14 @@ Create `.lead/journal/{YYYY-MM-DD}-{slug}.md` or append to today's journal:
 9. Close with a brief synthesis: "Here's what changed in your state" listing
    which files were updated and any patterns worth noting.
 
+---
+
+## Next Commands
+
+After debrief, suggest based on outcomes:
+- `/lead-prep {name}` — if another meeting is coming up
+- `/lead-decide {topic}` — if a decision emerged that needs analysis
+- `/lead-draft {type}` — if a communication needs to be sent
+- `/clear` — before the next command
+
 $ARGUMENTS

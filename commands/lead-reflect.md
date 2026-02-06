@@ -91,4 +91,12 @@ vs. where should I be spending it?}
    - Update `.lead/actions.md` based on my responses
    - Clean up completed actions older than 7 days from the Completed section
 
+---
+
+## Next Commands
+
+After reflecting, suggest:
+- `/lead-sync` — set focus for next week
+- `/clear` — before the next command
+
 $ARGUMENTS

@@ -83,4 +83,12 @@ Makes the review defensible.}
 6. Offer to update `.lead/context/self.md` with any new accomplishments or
    feedback that came up during this process.
 
+---
+
+## Next Commands
+
+After self-review, suggest:
+- [Refine the draft in your editor]
+- `/clear` — before the next command
+
 $ARGUMENTS

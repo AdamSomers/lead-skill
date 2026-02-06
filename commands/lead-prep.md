@@ -236,4 +236,13 @@ Focus: their perspective, what they need from you, and influence strategy.
 If the person file is thin, flag it: "The file for {name} is sparse — {N} entries
 in the log. After this meeting, run `/lead-debrief {name}` to build up context."
 
+---
+
+## Next Commands
+
+After prep, suggest:
+- [Go to your meeting]
+- `/lead-debrief {name}` — run after the meeting to capture outcomes
+- `/clear` — if not debriefing immediately
+
 $ARGUMENTS

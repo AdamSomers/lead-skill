@@ -56,4 +56,12 @@ Argument: type and topic. Examples:
 
 7. If I ask for revisions, update the file. When I'm satisfied, update status to Ready.
 
+---
+
+## Next Commands
+
+After drafting, suggest:
+- [Send the communication]
+- `/clear` — before the next command
+
 $ARGUMENTS

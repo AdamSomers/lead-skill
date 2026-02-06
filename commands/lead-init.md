@@ -430,4 +430,12 @@ is established. Don't re-run setup. Instead:
 
    If nothing was missing: "Your workspace already has all features."
 
+---
+
+## Next Commands
+
+After init, suggest:
+- `/lead-sync` — capture your current state of mind
+- `/clear` — clear context before starting work
+
 $ARGUMENTS

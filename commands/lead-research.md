@@ -53,4 +53,14 @@ how might these insights apply to the user's specific situation?}
    note the connection: "This seems relevant to {X}. Want me to add a reference
    in that file?"
 
+---
+
+## Next Commands
+
+After research, suggest returning to the triggering task:
+- `/lead-prep {name}` — if researching for a meeting
+- `/lead-decide {topic}` — if researching for a decision
+- `/lead-review {name}` — if researching for a review
+- `/clear` — before the next command
+
 $ARGUMENTS

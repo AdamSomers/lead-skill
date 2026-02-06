@@ -77,4 +77,14 @@ Daily sync: process my brain dump into structured management state.
 
 Keep the synthesis sharp and opinionated. Don't just parrot back what I said.
 
+---
+
+## Next Commands
+
+After sync, suggest based on context:
+- `/lead-prep {name}` — if meetings were mentioned
+- `/lead-actions` — to see full action list
+- `/lead-decide {topic}` — if a decision was surfaced
+- `/clear` — before the next command
+
 $ARGUMENTS

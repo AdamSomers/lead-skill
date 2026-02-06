@@ -109,4 +109,13 @@ Manual priority tags always take precedence.
 - Remove completed actions older than 7 days from the Completed section
 - When showing actions, flag any that are overdue or stale (>7 days without progress)
 
+---
+
+## Next Commands
+
+After reviewing actions, suggest:
+- `/lead-prep {name}` — prep for a meeting related to an action
+- `/lead-decide {topic}` — if an action requires a decision
+- `/clear` — before the next command
+
 $ARGUMENTS

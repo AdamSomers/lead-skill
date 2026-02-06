@@ -80,4 +80,13 @@ things the skip-level might ask about?}
 6. Present the draft with the bias/evidence checks and ask:
    "What would you adjust? Any examples I should add or reframe?"
 
+---
+
+## Next Commands
+
+After drafting review, suggest:
+- `/lead-draft feedback {name}` — package feedback for delivery
+- `/lead-prep {name}` — prep for the review conversation
+- `/clear` — before the next command
+
 $ARGUMENTS

@@ -92,4 +92,13 @@ Argument: decision topic. Example: `/lead-decide reorg team structure` or `/lead
    - Include source: `*source: decisions/{date}-{slug}*`
    - Include added date and any mentioned deadlines
 
+---
+
+## Next Commands
+
+After deciding, suggest:
+- `/lead-draft {type}` — communicate the decision (announcement, email, update)
+- `/lead-actions` — see all follow-up actions
+- `/clear` — before the next command
+
 $ARGUMENTS
